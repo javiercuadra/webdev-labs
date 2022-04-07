@@ -1,0 +1,72 @@
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    padding: 1rem 2rem;
+    background: #EEE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    width: 250px;
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content {
+    margin: 2rem 0;
+    overflow: auto;
+}
+
+.restaurant-title,
+.restaurant-review-count,
+.restaurant-rating,
+.restaurant-address
+{
+    margin-left: 1rem;
+}
+
+.restaurant-list{
+    display: flex;
+    overflow: auto;
+}
+.restaurant-list-item{
+    width: fit-content;
+    border: 1px solid #EEE;
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+
+.restaurant-list-item:first-child{
+    margin-left: 0;
+}
+
+.restaurant-review-count,
+.restaurant-rating{
+    border-bottom: 1px solid #EEE;
+}
+
+.restaurant-rating-label,
+.restaurant-review-count-label{
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    /* Media queries go here */
+}
+
+@media only screen and (max-width: 600px) {
+    /* Media queries go here */
+}

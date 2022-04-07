@@ -1,0 +1,23 @@
+<li class="restaurant-list-item">
+  <article class="restaurant-card">
+    <h2 class="restaurant-title">{{restaurant.get('name')}}</h2>
+    <img
+      class="restaurant-image"
+      src="{{restaurant.get('image_url')}}"
+      alt=""
+      height="320"
+      width="320"
+    />
+    <p class="restaurant-address">{{restaurant.get('display_address')}}</p>
+    {# I do not see in the json any key that allows me to access the price
+    rating for the restaurant, so I did not include that.#}
+    <p class="restaurant-rating">
+      <span class="restaurant-rating-label">Rating:</span>
+      {{restaurant.get('rating')}}
+    </p>
+    <p class="restaurant-review-count">
+      <span class="restaurant-review-count-label"># Reviews:</span>
+      {{restaurant.get('review_count')}}
+    </p>
+  </article>
+</li>
